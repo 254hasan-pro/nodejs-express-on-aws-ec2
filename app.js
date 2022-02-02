@@ -19,6 +19,11 @@ app.get('/products', (req, res) => {
   ])
 })
 
+app.get('/test', (req, res) => {
+  res.send('App is running in /test Route')
+})
+
+
 app.listen(port, ()=> {
   console.log(`Demo app is up and listening to port: ${port}`);
 })
